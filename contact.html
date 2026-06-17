@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Allaputa Deborah" />
+    <meta name="description" content="" />
+    <title>Online Book Library</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="fiction.html">Fiction</a></li>
+          <li><a href="nonfiction.html">Non-Fiction</a></li>
+          <li><a href="scifi.html">Scifi</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <h1>Contact Us</h1>
+      <form action="https://httpbin.org/post" method="post" class="contact">
+        <fieldset class="contact__fieldset personal">
+          <legend class="offscreen">Personal Information</legend>
+          <p>
+            <label class="personal__label" for="firstName">First Name:</label>
+            <input
+              class="personal__input"
+              type="text"
+              name="firstName"
+              id="firstName"
+              placeholder="E.g Jane"
+              autocomplete="on"
+              autofocus
+              required />
+          </p>
+
+          <p>
+            <label class="personal__label" for="lastName">Last Name:</label>
+            <input
+              class="personal__input"
+              type="text"
+              name="lastName"
+              id="lastName"
+              placeholder="E.g Doe"
+              autocomplete="on"
+              required />
+          </p>
+
+          <p>
+            <label class="personal__label" for="email">Email:</label>
+            <input
+              class="personal__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E.g random@gmail.com"
+              autocomplete="on"
+              required />
+          </p>
+
+          <p>
+            <label class="personal__label" for="phone">Phone:</label>
+            <input
+              class="personal__input"
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder=" E.g +234807****483"
+              autocomplete="on"
+              required
+              pattern="[+234][7-9][0-1][0-9]{8}" />
+          </p>
+        </fieldset>
+
+        <fieldset class="contact__fieldset fav-genre">
+          <legend class="offscreen">What is Your Favorite Book Genre</legend>
+
+          <p>
+            <input
+              class="fav-genre__input"
+              type="radio"
+              name="book-genre"
+              id="scifi" />
+            <label class="fav-genre__label" for="scifi">Sci-Fi</label>
+          </p>
+
+          <p>
+            <input
+              class="fav-genre__input"
+              type="radio"
+              name="book-genre"
+              id="fiction" />
+            <label class="fav-genre__label" for="fiction">Fiction</label>
+          </p>
+
+          <p>
+            <input
+              class="fav-genre__input"
+              type="radio"
+              name="book-genre"
+              id="nonfiction" />
+            <label class="fav-genre__label" for="nonfiction">Non Fiction</label>
+          </p>
+        </fieldset>
+
+        <fieldset class="contact__fieldset message">
+          <legend class="offscreen">Send Us A Message</legend>
+          <textarea
+            class="message__textarea"
+            name="message"
+            id="message"
+            placeholder="Type Your Message Here"
+            cols="30"
+            rows="10"></textarea>
+        </fieldset>
+
+        <button class="contact__button" type="submit">Send Message</button>
+        <button class="contact__button" type="reset">Reset</button>
+      </form>
+    </main>
+
+    <footer class="footer center">
+      <p>&copy; 2024 Online Book Library</p>
+    </footer>
+  </body>
+</html>

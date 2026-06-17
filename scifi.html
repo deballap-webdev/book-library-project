@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Allaputa Deborah" />
+    <meta name="description" content="" />
+    <title>Online Book Library</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="fiction.html">Fiction</a></li>
+          <li><a href="nonfiction.html">Non-Fiction</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <section id="search-scifi" class="search">
+        <h1 class="search__h1">
+          <abbr title="Science Fiction">Sci-Fi</abbr> Books
+        </h1>
+
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="search__form">
+          <input
+            type="search"
+            name="search-books"
+            id="search"
+            placeholder="Search books..."
+            list="books"
+            class="search__input" />
+          <datalist id="books" class="search__datalist">
+            <option value="The Future World"></option>
+            <option value="Galactic Odyssey"></option>
+            <option value="Beyound the Stars"></option>
+            <option value="Robots of Tomorrow"></option>
+            <option value="Quantum Drift"></option>
+            <option value="Science of the Stars"></option>
+          </datalist>
+          <button type="submit" class="search__button">Search</button>
+        </form>
+      </section>
+
+      <section id="book-catalog-scifi" class="catalog">
+        <h2 class="catalog__h2">Book Catalog</h2>
+        <table class="catalog__table">
+          <caption class="offscreen">
+            Science Fiction Books
+          </caption>
+          <thead class="catalog__thead">
+            <tr>
+              <th class="th" scope="col">Title</th>
+              <th class="th" scope="col">Author</th>
+              <th class="th" scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="td">The Future World</td>
+              <td class="td">Alex Carter</td>
+              <td class="td">Visions of technology and time</td>
+            </tr>
+
+            <tr>
+              <td class="td">Galactic Odyssey</td>
+              <td class="td">Rachel Adams</td>
+              <td class="td">An epic space adventure</td>
+            </tr>
+
+            <tr>
+              <td class="td">Beyound the Stars</td>
+              <td class="td">Ethan Moore</td>
+              <td class="td">A journey through the cosmos</td>
+            </tr>
+
+            <tr>
+              <td class="td">Robots of Tommorow</td>
+              <td class="td">Lily Scott</td>
+              <td class="td">The rise of intelligent machines</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer center">
+      <p>&copy; 2024 Online Book Library</p>
+    </footer>
+  </body>
+</html>

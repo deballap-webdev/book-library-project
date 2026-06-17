@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Allaputa Deborah" />
+    <meta name="description" content="" />
+    <title>Fiction Books</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="nonfiction.html">Non-Fiction</a>
+          </li>
+          <li>
+            <a href="scifi.html">Scifi</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <section id="search" class="search">
+        <h1 class="search__h1">Fiction Books</h1>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="search__form">
+          <input
+            class="search__input"
+            type="search"
+            name="search-books"
+            id="search-books"
+            placeholder="Search books..."
+            list="books" />
+          <datalist id="books" class="search__datalist">
+            <option value="The Great Adventure"></option>
+            <option value="Into the Wild"></option>
+            <option value="The Last Kingdom"></option>
+            <option value="Whispers in the Wind"></option>
+            <option value="The Hidden path"></option>
+            <option value="The Silent Orchard"></option>
+            <option value="A Dance of Shadows"></option>
+          </datalist>
+          <button type="submit" class="search__button">Search</button>
+        </form>
+      </section>
+
+      <section id="book-catalog" class="catalog">
+        <h2 class="catalog__h2">Book Catalog</h2>
+        <table class="catalog__table">
+          <caption class="offscreen">
+            Fiction Books
+          </caption>
+          <thead class="catalog__thead">
+            <tr>
+              <th class="catalog__th" scope="col">Tittle</th>
+
+              <th class="catalog__th" scope="col">Author</th>
+
+              <th class="catalog__th" scope="col">Description</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="catalog__td">Into the Wild</td>
+
+              <td class="catalog__td">Sara Green</td>
+              <td class="catalog__td">An inspiring survival story</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">The Last Kingdom</td>
+
+              <td class="catalog__td">David White</td>
+              <td class="catalog__td">A tale of honor and courage</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">Whispers in the WInd</td>
+
+              <td class="catalog__td">Emily Clark</td>
+              <td class="catalog__td">A heartfelt story of love and loss</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">The Hidden Path</td>
+
+              <td class="catalog__td">James Walker</td>
+              <td class="catalog__td">An unforgettable adventure</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer center">
+      <p>&copy; 2024 Online Book Library</p>
+    </footer>
+  </body>
+</html>

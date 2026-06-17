@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Allaputa Deborah" />
+    <meta name="description" content="" />
+    <title>Online Book Library</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li><a href="/">Home</a></li>
+          <li><a href="fiction.html">Fiction</a></li>
+          <li>
+            <a href="scifi.html"><abbr title="Science Fiction">Sci-Fi</abbr></a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <main>
+      <section id="search-nonfiction" class="search">
+        <h1 class="search__h1">Non-Fiction Books</h1>
+
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="search__form">
+          <input
+            class="search__input"
+            type="search"
+            name="search-books"
+            id="search-books"
+            placeholder="Search books..."
+            list="books" />
+          <datalist id="books" class="search__datalist">
+            <option value="History Unvieled"></option>
+            <option value="Mystery of the Past"></option>
+            <option value="The Power of Habit"></option>
+            <option value="Healthy Living"></option>
+            <option value="The Future of Work"></option>
+            <option value="Mind Over Systems"></option>
+            <option value="The Science of Everyday Life"></option>
+          </datalist>
+          <button class="search__button" type="submit">Search</button>
+        </form>
+      </section>
+
+      <section id="book-catalog-nonfiction" class="catalog">
+        <h2 class="catalog__h2">Book Catalog</h2>
+        <table class="catalog__table">
+          <caption class="offscreen">
+            Non-Fiction Books
+          </caption>
+          <thead class="catalog__thead">
+            <tr>
+              <th class="catalog__th" scope="col">Title</th>
+              <th class="catalog__th" scope="col">Author</th>
+              <th class="catalog__th" scope="col">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="catalog__td">History Unveiled</td>
+              <td class="catalog__td">Michael Brown</td>
+              <td class="catalog__td">Uncovering ancient secrets</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">The Power of Habit</td>
+              <td class="catalog__td">Daniel Smith</td>
+              <td class="catalog__td">How habits shape our lives</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">Healthy Living</td>
+              <td class="catalog__td">Sophia Lee</td>
+              <td class="catalog__td">A guide to a better you</td>
+            </tr>
+
+            <tr>
+              <td class="catalog__td">The Future of Work</td>
+              <td class="catalog__td">Brian Taylor</td>
+              <td class="catalog__td">Trends shaping the workspace</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer center">
+      <p>&copy; 2024 Online Book Library</p>
+    </footer>
+  </body>
+</html>

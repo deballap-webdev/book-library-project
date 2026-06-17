@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Allaputa Deborah" />
+    <meta name="description" content="" />
+    <title>Online Book Library</title>
+    <link rel="icon" href="" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li>
+            <a href="fiction.html">Fiction</a>
+          </li>
+          <li>
+            <a href="nonfiction.html">Non-Fiction</a>
+          </li>
+          <li>
+            <a href="scifi.html"><abbr title="Science Fiction">Sci-Fi</abbr></a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="search-index" class="search">
+        <h1 class="search__h1">Online Book Library</h1>
+        <form
+          action="https://httpbin.org/get"
+          method="get"
+          class="search__form">
+          <input
+            class="search__input"
+            type="search"
+            name="search-books"
+            id="search-books"
+            placeholder="Search books..."
+            list="books" />
+          <datalist id="books" class="search__datalist">
+            <option value="The Great Adventure"></option>
+            <option value="Into the Wild"></option>
+            <option value="The Last Kingdom"></option>
+            <option value="Whispers in the Wind"></option>
+            <option value="The Hidden path"></option>
+            <option value="The Silent Orchard"></option>
+            <option value="A Dance of Shadows"></option>
+
+            <option value="History Unveiled"></option>
+            <option value="Mystery of the Past"></option>
+            <option value="The Power of Habit"></option>
+            <option value="Healthy Living"></option>
+            <option value="The Future of Work"></option>
+            <option value="Mind Over Systems"></option>
+            <option value="The Science of Everyday Life"></option>
+
+            <option value="The Future World"></option>
+            <option value="Galactic Odyssey"></option>
+            <option value="Beyound the Stars"></option>
+            <option value="Robots of Tomorrow"></option>
+            <option value="Quantum Drift"></option>
+            <option value="Science of the Stars"></option>
+          </datalist>
+          <button type="submit" class="search__button">Search</button>
+        </form>
+      </section>
+
+      <article id="featured-books" class="featured">
+        <h2 class="featured__h2">Featured Books</h2>
+
+        <div class="container">
+          <figure id="the-great-adventure" class="featured__figure">
+            <div class="content-wrapper">
+              <!-- <img
+                class="featured__img"
+                src="img/caribbean.jpg"
+                alt="BOOK COVER"
+                title="The Great Adventure Book Cover" />
+ -->
+              <div class="book-cover">BOOK COVER</div>
+              <a href=""><h3 class="featured__h3">The Great Adventure</h3></a>
+              <p>Author: <span class="nowrap">John Smith</span></p>
+            </div>
+
+            <figcaption class="featured__figcaption">
+              <p>A thrilling journey through uncharted lands</p>
+              <aside class="featured__aside asd-1">
+                <!--Put Actual Details Here-->
+                <details class="featured__details">
+                  <summary class="featured__summary">Read More</summary>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ullam quas quibusdam autem enim dolorem, provident pariatur
+                  modi sunt eius! Facere sequi ipsam sed voluptas enim impedit
+                  explicabo tempore aperiam deserunt.Labore sapiente vel eaque
+                  laboriosam rerum earum non consequuntur asperiores quas
+                  officia possimus beatae accusantium ut ipsa, quos aperiam
+                  magnam consequatur, exercitationem iusto inventore a illo,
+                  debitis soluta recusandae! Sit.
+                </details>
+              </aside>
+            </figcaption>
+          </figure>
+
+          <figure id="mystery-of-the-past" class="featured__figure">
+            <div class="content-wrapper">
+              <!-- <img
+                class="featured__img"
+                src="img/caribbean.jpg"
+                alt="BOOK COVER"
+                title="Mystery of the Past Book Cover" />
+ -->
+              <div class="book-cover">BOOK COVER</div>
+              <a href=""><h3 class="featured__h3">Mystery of the Past</h3></a>
+              <p>Author: <span class="nowrap">Jane Doe</span></p>
+            </div>
+            <figcaption class="featured__figcaption">
+              <p>A gripping historical mystery novel</p>
+
+              <aside class="featured__aside asd-2">
+                <!--Put Actual Details Here-->
+                <details class="featured__details">
+                  <summary class="featured__summary">Read More</summary>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ullam quas quibusdam autem enim dolorem, provident pariatur
+                  modi sunt eius! Facere sequi ipsam sed voluptas enim impedit
+                  explicabo tempore aperiam deserunt.Labore sapiente vel eaque
+                  laboriosam rerum earum non consequuntur asperiores quas
+                  officia possimus beatae accusantium ut ipsa, quos aperiam
+                  magnam consequatur, exercitationem iusto inventore a illo,
+                  debitis soluta recusandae! Sit.
+                </details>
+              </aside>
+            </figcaption>
+          </figure>
+
+          <figure id="science-of-the-stars" class="featured__figure">
+            <div class="content-wrapper">
+              <!-- <img
+                class="featured__img"
+                src="img/caribbean.jpg"
+                alt="BOOK COVER"
+                title="Science of the Stars Book Cover" />
+ -->
+              <div class="book-cover">BOOK COVER</div>
+              <a href=""><h3 class="featured__h3">Science of the Stars</h3></a>
+              <p>Author: <span class="nowrap">Mark Lee</span></p>
+            </div>
+            <figcaption class="featured__figcaption">
+              <p>Exploring the wonders of the universe</p>
+
+              <aside class="featured__aside asd-3">
+                <!--Put Actual Details Here-->
+                <details class="featured__details">
+                  <summary class="featured__summary">Read More</summary>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ullam quas quibusdam autem enim dolorem, provident pariatur
+                  modi sunt eius! Facere sequi ipsam sed voluptas enim impedit
+                  explicabo tempore aperiam deserunt.Labore sapiente vel eaque
+                  laboriosam rerum earum non consequuntur asperiores quas
+                  officia possimus beatae accusantium ut ipsa, quos aperiam
+                  magnam consequatur, exercitationem iusto inventore a illo,
+                  debitis soluta recusandae! Sit.
+                </details>
+              </aside>
+            </figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <section id="book-catalog-index" class="catalog">
+        <h2 class="catalog__h2">Book Catalog</h2>
+        <div class="catalog-table-wrapper">
+          <table class="catalog__table">
+            <caption class="offscreen">
+              Catalog
+            </caption>
+            <thead class="catalog__thead">
+              <tr>
+                <th class="catalog__th" scope="col">Title</th>
+                <th class="catalog__th" scope="col">Author</th>
+                <th class="catalog__th" scope="col">Genre</th>
+                <th class="catalog__th" scope="col">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="catalog__td">
+                  <a href="">Into the Wild</a>
+                </td>
+                <td class="catalog__td">Sara Green</td>
+                <td class="catalog__td">Fiction</td>
+                <td class="catalog__td">An inspiring survival story</td>
+              </tr>
+
+              <tr>
+                <td class="catalog__td">
+                  <a href="">The Future World</a>
+                </td>
+                <td class="catalog__td">Alex Carter</td>
+                <td class="catalog__td">
+                  <abbr title="Science Fiction">Sci-Fi</abbr>
+                </td>
+                <td class="catalog__td">Visions of technology and time</td>
+              </tr>
+
+              <tr>
+                <td class="catalog__td">
+                  <a href="">History Unveiled</a>
+                </td>
+                <td class="catalog__td">Michael Brown</td>
+                <td class="catalog__td">Non-Fiction</td>
+                <td class="catalog__td">Uncovering ancients secrets</td>
+              </tr>
+
+              <tr>
+                <td class="catalog__td">
+                  <a href="">Galactic Odyssey</a>
+                </td>
+                <td class="catalog__td">Rachael Adams</td>
+                <td class="catalog__td">
+                  <abbr title="Science Fiction">Sci-Fi</abbr>
+                </td>
+                <td class="catalog__td">An epic space adventure</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer center">
+      <p>&copy; 2024 Online Book Library</p>
+    </footer>
+  </body>
+</html>
