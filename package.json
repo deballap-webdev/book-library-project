@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.1"
+  },
+  "name": "book-catalog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./build/css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D3BB13-webdev/book-library-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/D3BB13-webdev/book-library-project/issues"
+  },
+  "homepage": "https://github.com/D3BB13-webdev/book-library-project#readme"
+}

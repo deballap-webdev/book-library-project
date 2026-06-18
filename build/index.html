@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="font-sans scroll-smooth text-fs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,40 +8,63 @@
     <title>Online Book Library</title>
     <link rel="icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li>
-            <a href="fiction.html">Fiction</a>
+  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+    <header class="shrink">
+      <nav class="border-b bg-header-bgcolor">
+        <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2">
+          <li class="list-none">
+            <a
+              href="fiction.html"
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              >Fiction</a
+            >
           </li>
-          <li>
-            <a href="nonfiction.html">Non-Fiction</a>
+          <li class="list-none">
+            <a
+              href="nonfiction.html"
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              >Non-Fiction</a
+            >
           </li>
-          <li>
-            <a href="scifi.html"><abbr title="Science Fiction">Sci-Fi</abbr></a>
+          <li class="list-none">
+            <a
+              href="scifi.html"
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              ><abbr title="Science Fiction">Sci-Fi</abbr></a
+            >
           </li>
-          <li>
-            <a href="contact.html">Contact</a>
+          <li class="list-none">
+            <a
+              href="contact.html"
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              >Contact</a
+            >
           </li>
-          <li>
-            <a href="about.html">About</a>
+          <li class="list-none">
+            <a
+              href="about.html"
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              >About</a
+            >
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section id="search-index" class="search">
-        <h1 class="search__h1">Online Book Library</h1>
+    <main class="grow p-4">
+      <section id="search-index">
+        <h1 class="text-center p-2 text-font-color text-3xl font-bold my-4">
+          Online Book Library
+        </h1>
         <form
           action="https://httpbin.org/get"
           method="get"
-          class="search__form">
+          class="mx-auto flex flex-row flex-wrap justify-center items-center gap-4">
           <input
-            class="search__input"
+            class="w-search-input-width border p-2 mb-4 rounded-[5px]"
             type="search"
             name="search-books"
             id="search-books"
@@ -71,32 +94,45 @@
             <option value="Quantum Drift"></option>
             <option value="Science of the Stars"></option>
           </datalist>
-          <button type="submit" class="search__button">Search</button>
+          <button
+            type="submit"
+            class="border p-2 mb-4 rounded-[5px] text-white bg-button-color w-search-button-width">
+            Search
+          </button>
         </form>
       </section>
 
-      <article id="featured-books" class="featured">
-        <h2 class="featured__h2">Featured Books</h2>
+      <article id="featured-books" class="m-4">
+        <h2 class="border-y p-2">Featured Books</h2>
 
-        <div class="container">
+        <div class="flex flex-row flex-wrap gap-4 justify-between mt-6">
           <figure id="the-great-adventure" class="featured__figure">
-            <div class="content-wrapper">
+            <div
+              class="grid [grid-template-areas:'cover_title''cover_author'] gap-y-2 gap-x-[0.2rem] grid-cols-[1fr_2fr] grid-rows-[2fr_1fr]">
               <!-- <img
                 class="featured__img"
                 src="img/caribbean.jpg"
                 alt="BOOK COVER"
                 title="The Great Adventure Book Cover" />
  -->
-              <div class="book-cover">BOOK COVER</div>
-              <a href=""><h3 class="featured__h3">The Great Adventure</h3></a>
-              <p>Author: <span class="nowrap">John Smith</span></p>
+              <div
+                class="[grid-area:cover] w-20 max-h-62.5 linear-gradient text-white flex flex-col justify-center items-center font-bold">
+                <div>BOOK</div>
+                <div>COVER</div>
+              </div>
+              <a href=""
+                ><h3 class="[grid-area:title]">The Great Adventure</h3></a
+              >
+              <p class="[grid-area:author]">
+                Author: <span class="nowrap">John Smith</span>
+              </p>
             </div>
 
-            <figcaption class="featured__figcaption">
+            <figcaption class="flex flex-col flex-nowrap gap-4">
               <p>A thrilling journey through uncharted lands</p>
-              <aside class="featured__aside asd-1">
+              <aside>
                 <!--Put Actual Details Here-->
-                <details class="featured__details">
+                <details class="text-justify">
                   <summary class="featured__summary">Read More</summary>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Ullam quas quibusdam autem enim dolorem, provident pariatur
@@ -112,23 +148,32 @@
           </figure>
 
           <figure id="mystery-of-the-past" class="featured__figure">
-            <div class="content-wrapper">
+            <div
+              class="grid [grid-template-areas:'cover_title''cover_author'] gap-y-2 gap-x-6 grid-cols-[1fr_2fr] grid-rows-[2fr_1fr]">
               <!-- <img
                 class="featured__img"
                 src="img/caribbean.jpg"
                 alt="BOOK COVER"
                 title="Mystery of the Past Book Cover" />
  -->
-              <div class="book-cover">BOOK COVER</div>
-              <a href=""><h3 class="featured__h3">Mystery of the Past</h3></a>
-              <p>Author: <span class="nowrap">Jane Doe</span></p>
+              <div
+                class="[grid-area:cover] w-20 linear-gradient text-white flex flex-col justify-center items-center font-bold">
+                <div>BOOK</div>
+                <div>COVER</div>
+              </div>
+              <a href="" class="[grid-area:title]"
+                ><h3>Mystery of the Past</h3></a
+              >
+              <p class="[grid-area:author]">
+                Author: <span class="nowrap">Jane Doe</span>
+              </p>
             </div>
-            <figcaption class="featured__figcaption">
+            <figcaption class="flex flex-col flex-nowrap gap-4">
               <p>A gripping historical mystery novel</p>
 
               <aside class="featured__aside asd-2">
                 <!--Put Actual Details Here-->
-                <details class="featured__details">
+                <details class="text-justify">
                   <summary class="featured__summary">Read More</summary>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Ullam quas quibusdam autem enim dolorem, provident pariatur
@@ -144,23 +189,32 @@
           </figure>
 
           <figure id="science-of-the-stars" class="featured__figure">
-            <div class="content-wrapper">
+            <div
+              class="[grid-template-areas:'cover_title''cover_author'] gap-y-2 gap-x-[0.2rem] grid-cols-[1fr_2fr] grid-rows-[2fr_1fr]">
               <!-- <img
                 class="featured__img"
                 src="img/caribbean.jpg"
                 alt="BOOK COVER"
                 title="Science of the Stars Book Cover" />
  -->
-              <div class="book-cover">BOOK COVER</div>
-              <a href=""><h3 class="featured__h3">Science of the Stars</h3></a>
-              <p>Author: <span class="nowrap">Mark Lee</span></p>
+              <div
+                class="[grid-area:cover] w-20 max-h-62.5 linear-gradient text-white justify-center items-center font-bold">
+                <div>BOOK</div>
+                <div>COVER</div>
+              </div>
+              <a href="" class="[grid-area:title]"
+                ><h3>Science of the Stars</h3></a
+              >
+              <p class="[grid-area:author]">
+                Author: <span class="nowrap">Mark Lee</span>
+              </p>
             </div>
-            <figcaption class="featured__figcaption">
+            <figcaption class="flex flex-col flex-nowrap gap-4">
               <p>Exploring the wonders of the universe</p>
 
               <aside class="featured__aside asd-3">
                 <!--Put Actual Details Here-->
-                <details class="featured__details">
+                <details class="text-justify">
                   <summary class="featured__summary">Read More</summary>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Ullam quas quibusdam autem enim dolorem, provident pariatur

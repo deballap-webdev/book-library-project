@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  /* COLORS */
+  --color-font-color: #000;
+  --color-header-color: #333;
+  --color-header-bgcolor: #eee;
+  --color-border-color: #333;
+  --color-button-color: hsl(243, 31%, 25%);
+  --color-link-color: hsla(0, 0%, 0%, 0.6);
+  --color-table-color: #eee;
+
+  --text-fs: clamp(1rem, 2.2vh, 1.5rem);
+  --sapcing-standard-margin: clamp(1em, 2.2vh, 1.5em);
+  --container-search-input-width: clamp(150px, 300px, 50%);
+  --container-search-button-width: clamp(80px, 20%, 120px);
+}
+
+.linear-gradient {
+  background-image: linear-gradient(
+    to top,
+    rgb(15, 15, 34),
+    rgb(116, 116, 121)
+  );
+}
