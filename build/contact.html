@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="font-sans text-fs scroll-smooth">
+<html lang="en" class="font-sans text-fs scroll-smooth bg-gray-600">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+  <body
+    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white max-w-[800px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white shadow-2xl">
     <header class="shrink sticky top-0 z-1">
-      <nav class="border-b bg-header-bgcolor">
+      <nav
+        class="border-b dark:border-none bg-header-bgcolor dark:bg-white dark:text-black">
         <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
           <li>
             <a
@@ -55,14 +57,17 @@
     <hr />
 
     <main class="grow p-4">
-      <h1>Contact Us</h1>
+      <h1 class="text-center text-3xl my-8 font-extrabold">Contact Us</h1>
       <form action="https://httpbin.org/post" method="post" class="contact">
-        <fieldset class="contact__fieldset personal">
-          <legend class="offscreen">Personal Information</legend>
-          <p>
-            <label class="personal__label" for="firstName">First Name:</label>
+        <fieldset class="personal">
+          <legend class="font-bold text-[1.3rem] mt-4 mb-2">
+            Personal Information
+          </legend>
+          <p class="mb-8 mx-8">
+            <label class="block my-2 w-[75%]">First Name:</label>
             <input
-              class="personal__input"
+              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
+              for="firstName"
               type="text"
               name="firstName"
               id="firstName"
@@ -72,10 +77,10 @@
               required />
           </p>
 
-          <p>
-            <label class="personal__label" for="lastName">Last Name:</label>
+          <p class="m-8">
+            <label class="block my-2 w-[75%]" for="lastName">Last Name:</label>
             <input
-              class="personal__input"
+              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="text"
               name="lastName"
               id="lastName"
@@ -84,10 +89,10 @@
               required />
           </p>
 
-          <p>
-            <label class="personal__label" for="email">Email:</label>
+          <p class="m-8">
+            <label class="block my-2 w-[75%]" for="email">Email:</label>
             <input
-              class="personal__input"
+              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="email"
               name="email"
               id="email"
@@ -96,10 +101,10 @@
               required />
           </p>
 
-          <p>
-            <label class="personal__label" for="phone">Phone:</label>
+          <p class="m-8">
+            <label class="block my-2 w-[75%]" for="phone">Phone:</label>
             <input
-              class="personal__input"
+              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="tel"
               name="phone"
               id="phone"
@@ -110,10 +115,12 @@
           </p>
         </fieldset>
 
-        <fieldset class="contact__fieldset fav-genre">
-          <legend class="offscreen">What is Your Favorite Book Genre</legend>
+        <fieldset class="contact__fieldset mb-4">
+          <legend class="font-bold text-[1.3rem] my-4">
+            What is Your Favorite Book Genre
+          </legend>
 
-          <p>
+          <p class="mb-2">
             <input
               class="fav-genre__input"
               type="radio"
@@ -122,7 +129,7 @@
             <label class="fav-genre__label" for="scifi">Sci-Fi</label>
           </p>
 
-          <p>
+          <p class="mb-2">
             <input
               class="fav-genre__input"
               type="radio"
@@ -131,7 +138,7 @@
             <label class="fav-genre__label" for="fiction">Fiction</label>
           </p>
 
-          <p>
+          <p class="mb-2">
             <input
               class="fav-genre__input"
               type="radio"
@@ -142,9 +149,11 @@
         </fieldset>
 
         <fieldset class="contact__fieldset message">
-          <legend class="offscreen">Send Us A Message</legend>
+          <legend class="font-bold text-[1.3rem] mb-4">
+            Send Us A Message
+          </legend>
           <textarea
-            class="message__textarea"
+            class="text-[0.8rem] font-extralight border-3 rounded-lg p-2"
             name="message"
             id="message"
             placeholder="Type Your Message Here"
@@ -152,12 +161,21 @@
             rows="10"></textarea>
         </fieldset>
 
-        <button class="contact__button" type="submit">Send Message</button>
-        <button class="contact__button" type="reset">Reset</button>
+        <button
+          class="p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
+          type="submit">
+          Send Message
+        </button>
+        <button
+          class="p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
+          type="submit">
+          Reset
+        </button>
       </form>
     </main>
 
-    <footer class="bg-header-bgcolor border-t p-2 text-center">
+    <footer
+      class="bg-header-bgcolor border-t p-2 text-center dark:bg-white dark:text-black">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>
