@@ -10,40 +10,39 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
   <body class="w-full min-h-screen flex flex-col flex-nowrap">
-    <header class="shrink">
+    <header class="shrink sticky top-0 z-1">
       <nav class="border-b bg-header-bgcolor">
-        <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2">
-          <li class="list-none">
+        <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
+          <li>
             <a
               href="fiction.html"
               class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
               >Fiction</a
             >
           </li>
-          <li class="list-none">
+          <li>
             <a
               href="nonfiction.html"
               class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
               >Non-Fiction</a
             >
           </li>
-          <li class="list-none">
+          <li>
             <a
               href="scifi.html"
               class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
               ><abbr title="Science Fiction">Sci-Fi</abbr></a
             >
           </li>
-          <li class="list-none">
+          <li>
             <a
               href="contact.html"
               class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
               >Contact</a
             >
           </li>
-          <li class="list-none">
+          <li>
             <a
               href="about.html"
               class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
@@ -232,59 +231,83 @@
       </article>
 
       <section id="book-catalog-index" class="catalog">
-        <h2 class="catalog__h2">Book Catalog</h2>
-        <div class="catalog-table-wrapper">
-          <table class="catalog__table">
-            <caption class="offscreen">
+        <h2 class="border-t p-2">Book Catalog</h2>
+        <div class="w-full overflow-x-auto">
+          <table class="border border-collapse p-2">
+            <caption class="absolute -left-1000">
               Catalog
             </caption>
             <thead class="catalog__thead">
-              <tr>
-                <th class="catalog__th" scope="col">Title</th>
-                <th class="catalog__th" scope="col">Author</th>
-                <th class="catalog__th" scope="col">Genre</th>
-                <th class="catalog__th" scope="col">Description</th>
+              <tr class="border border-collapse p-2">
+                <th
+                  class="bg-table-color border border-collapse p-2"
+                  scope="col">
+                  Title
+                </th>
+                <th
+                  class="bg-table-color border border-collapse p-2"
+                  scope="col">
+                  Author
+                </th>
+                <th
+                  class="bg-table-color border border-collapse p-2"
+                  scope="col">
+                  Genre
+                </th>
+                <th
+                  class="bg-table-color border border-collapse p-2"
+                  scope="col">
+                  Description
+                </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="catalog__td">
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">
                   <a href="">Into the Wild</a>
                 </td>
-                <td class="catalog__td">Sara Green</td>
-                <td class="catalog__td">Fiction</td>
-                <td class="catalog__td">An inspiring survival story</td>
+                <td class="border border-collapse p-2">Sara Green</td>
+                <td class="border border-collapse p-2">Fiction</td>
+                <td class="border border-collapse p-2">
+                  An inspiring survival story
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">
+              <tr class="border border-collapse p-2 bg-table-color">
+                <td class="border border-collapse p-2">
                   <a href="">The Future World</a>
                 </td>
-                <td class="catalog__td">Alex Carter</td>
-                <td class="catalog__td">
+                <td class="border border-collapse p-2">Alex Carter</td>
+                <td class="border border-collapse p-2">
                   <abbr title="Science Fiction">Sci-Fi</abbr>
                 </td>
-                <td class="catalog__td">Visions of technology and time</td>
+                <td class="border border-collapse p-2">
+                  Visions of technology and time
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">
                   <a href="">History Unveiled</a>
                 </td>
-                <td class="catalog__td">Michael Brown</td>
-                <td class="catalog__td">Non-Fiction</td>
-                <td class="catalog__td">Uncovering ancients secrets</td>
+                <td class="border border-collapse p-2">Michael Brown</td>
+                <td class="border border-collapse p-2">Non-Fiction</td>
+                <td class="border border-collapse p-2">
+                  Uncovering ancients secrets
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">
+              <tr class="border border-collapse p-2 bg-table-color">
+                <td class="border border-collapse p-2">
                   <a href="">Galactic Odyssey</a>
                 </td>
-                <td class="catalog__td">Rachael Adams</td>
-                <td class="catalog__td">
+                <td class="border border-collapse p-2">Rachael Adams</td>
+                <td class="border border-collapse p-2">
                   <abbr title="Science Fiction">Sci-Fi</abbr>
                 </td>
-                <td class="catalog__td">An epic space adventure</td>
+                <td class="border border-collapse p-2">
+                  An epic space adventure
+                </td>
               </tr>
             </tbody>
           </table>
@@ -292,7 +315,7 @@
       </section>
     </main>
 
-    <footer class="footer center">
+    <footer class="bg-header-bgcolor border-t p-2 text-center">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>

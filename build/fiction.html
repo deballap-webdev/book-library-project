@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" class="font-sans text-fs scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,41 +7,63 @@
     <meta name="description" content="" />
     <title>Fiction Books</title>
     <link rel="icon" href="" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__ul">
+  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+    <header class="shrink sticky top-0 z-1">
+      <nav class="border-b bg-header-bgcolor">
+        <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
           <li>
-            <a href="/">Home</a>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="/"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="nonfiction.html">Non-Fiction</a>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="nonfiction.html"
+              >Non-Fiction</a
+            >
           </li>
           <li>
-            <a href="scifi.html">Scifi</a>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="scifi.html"
+              >Scifi</a
+            >
           </li>
           <li>
-            <a href="contact.html">Contact</a>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="contact.html"
+              >Contact</a
+            >
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="about.html"
+              >About</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <hr />
-    <main>
+    <main class="grow p-4">
       <section id="search" class="search">
-        <h1 class="search__h1">Fiction Books</h1>
+        <h1 class="text-center p-2 text-font-color my-4 text-3xl font-bold">
+          Fiction Books
+        </h1>
         <form
           action="https://httpbin.org/get"
           method="get"
-          class="search__form">
+          class="mx-auto flex flex-row flex-nowrap justify-center items-center gap-4">
           <input
-            class="search__input"
+            class="w-search-input-width rounded-[5px] p-2 border mb-standard-margin"
             type="search"
             name="search-books"
             id="search-books"
@@ -56,60 +78,66 @@
             <option value="The Silent Orchard"></option>
             <option value="A Dance of Shadows"></option>
           </datalist>
-          <button type="submit" class="search__button">Search</button>
+          <button
+            type="submit"
+            class="w-search-button-width bg-button-color text-white rounded-[5px] p-2 border mb-standard-margin">
+            Search
+          </button>
         </form>
       </section>
 
       <section id="book-catalog" class="catalog">
-        <h2 class="catalog__h2">Book Catalog</h2>
-        <table class="catalog__table">
-          <caption class="offscreen">
-            Fiction Books
-          </caption>
-          <thead class="catalog__thead">
-            <tr>
-              <th class="catalog__th" scope="col">Tittle</th>
+        <h2 class="border-t p-2">Book Catalog</h2>
+        <div class="w-full overflow-x-auto">
+          <table class="border border-collapse p-2">
+            <caption class="offscreen">
+              Fiction Books
+            </caption>
+            <thead class="catalog__thead">
+              <tr>
+                <th class="catalog__th" scope="col">Tittle</th>
 
-              <th class="catalog__th" scope="col">Author</th>
+                <th class="catalog__th" scope="col">Author</th>
 
-              <th class="catalog__th" scope="col">Description</th>
-            </tr>
-          </thead>
+                <th class="catalog__th" scope="col">Description</th>
+              </tr>
+            </thead>
 
-          <tbody>
-            <tr>
-              <td class="catalog__td">Into the Wild</td>
+            <tbody>
+              <tr>
+                <td class="catalog__td">Into the Wild</td>
 
-              <td class="catalog__td">Sara Green</td>
-              <td class="catalog__td">An inspiring survival story</td>
-            </tr>
+                <td class="catalog__td">Sara Green</td>
+                <td class="catalog__td">An inspiring survival story</td>
+              </tr>
 
-            <tr>
-              <td class="catalog__td">The Last Kingdom</td>
+              <tr>
+                <td class="catalog__td">The Last Kingdom</td>
 
-              <td class="catalog__td">David White</td>
-              <td class="catalog__td">A tale of honor and courage</td>
-            </tr>
+                <td class="catalog__td">David White</td>
+                <td class="catalog__td">A tale of honor and courage</td>
+              </tr>
 
-            <tr>
-              <td class="catalog__td">Whispers in the WInd</td>
+              <tr>
+                <td class="catalog__td">Whispers in the WInd</td>
 
-              <td class="catalog__td">Emily Clark</td>
-              <td class="catalog__td">A heartfelt story of love and loss</td>
-            </tr>
+                <td class="catalog__td">Emily Clark</td>
+                <td class="catalog__td">A heartfelt story of love and loss</td>
+              </tr>
 
-            <tr>
-              <td class="catalog__td">The Hidden Path</td>
+              <tr>
+                <td class="catalog__td">The Hidden Path</td>
 
-              <td class="catalog__td">James Walker</td>
-              <td class="catalog__td">An unforgettable adventure</td>
-            </tr>
-          </tbody>
-        </table>
+                <td class="catalog__td">James Walker</td>
+                <td class="catalog__td">An unforgettable adventure</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer class="footer center">
+    <footer class="bg-header-bgcolor border-t p-2 text-center">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>

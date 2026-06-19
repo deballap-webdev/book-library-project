@@ -11,7 +11,7 @@
   --color-table-color: #eee;
 
   --text-fs: clamp(1rem, 2.2vh, 1.5rem);
-  --sapcing-standard-margin: clamp(1em, 2.2vh, 1.5em);
+  --spacing-standard-margin: clamp(1em, 2.2vh, 1.5em);
   --container-search-input-width: clamp(150px, 300px, 50%);
   --container-search-button-width: clamp(80px, 20%, 120px);
 }

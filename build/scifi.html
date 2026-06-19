@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en" class="font-sans text-fs scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,40 +7,70 @@
     <meta name="description" content="" />
     <title>Online Book Library</title>
     <link rel="icon" href="" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li><a href="/">Home</a></li>
-          <li><a href="fiction.html">Fiction</a></li>
-          <li><a href="nonfiction.html">Non-Fiction</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="about.html">About</a></li>
+  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+    <header class="shrink sticky top-0 z-1">
+      <nav class="border-b bg-header-bgcolor">
+        <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
+          <li>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="fiction.html"
+              >Fiction</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="nonfiction.html"
+              >Non-Fiction</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-link-color focus:text-link-color active:bg-black active:text-white"
+              href="about.html"
+              >About</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <hr />
 
-    <main>
+    <main class="grow p-4">
       <section id="search-scifi" class="search">
-        <h1 class="search__h1">
+        <h1 class="text-center p-2 text-font-color my-4 text-3xl font-bold">
           <abbr title="Science Fiction">Sci-Fi</abbr> Books
         </h1>
 
         <form
           action="https://httpbin.org/get"
           method="get"
-          class="search__form">
+          class="mx-auto flex flex-row flex-nowrap justify-center items-center gap-4">
           <input
             type="search"
             name="search-books"
             id="search"
             placeholder="Search books..."
             list="books"
-            class="search__input" />
+            class="w-search-input-width rounded-[5px] p-2 border mb-standard-margin" />
           <datalist id="books" class="search__datalist">
             <option value="The Future World"></option>
             <option value="Galactic Odyssey"></option>
@@ -49,53 +79,69 @@
             <option value="Quantum Drift"></option>
             <option value="Science of the Stars"></option>
           </datalist>
-          <button type="submit" class="search__button">Search</button>
+          <button
+            type="submit"
+            class="w-search-button-width bg-button-color text-white rounded-[5px] p-2 border mb-standard-margin">
+            Search
+          </button>
         </form>
       </section>
 
       <section id="book-catalog-scifi" class="catalog">
-        <h2 class="catalog__h2">Book Catalog</h2>
-        <table class="catalog__table">
-          <caption class="offscreen">
-            Science Fiction Books
-          </caption>
-          <thead class="catalog__thead">
-            <tr>
-              <th class="th" scope="col">Title</th>
-              <th class="th" scope="col">Author</th>
-              <th class="th" scope="col">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="td">The Future World</td>
-              <td class="td">Alex Carter</td>
-              <td class="td">Visions of technology and time</td>
-            </tr>
+        <h2 class="border-t p-2">Book Catalog</h2>
+        <div class="w-full overflow-x-auto">
+          <table class="border border-collapse p-2">
+            <caption class="absolute -left-10000">
+              Science Fiction Books
+            </caption>
+            <thead class="catalog__thead">
+              <tr class="border border-collapse p-2">
+                <th class="border border-collapse p-2" scope="col">Title</th>
+                <th class="border border-collapse p-2" scope="col">Author</th>
+                <th class="border border-collapse p-2" scope="col">
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">The Future World</td>
+                <td class="border border-collapse p-2">Alex Carter</td>
+                <td class="border border-collapse p-2">
+                  Visions of technology and time
+                </td>
+              </tr>
 
-            <tr>
-              <td class="td">Galactic Odyssey</td>
-              <td class="td">Rachel Adams</td>
-              <td class="td">An epic space adventure</td>
-            </tr>
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">Galactic Odyssey</td>
+                <td class="border border-collapse p-2">Rachel Adams</td>
+                <td class="border border-collapse p-2">
+                  An epic space adventure
+                </td>
+              </tr>
 
-            <tr>
-              <td class="td">Beyound the Stars</td>
-              <td class="td">Ethan Moore</td>
-              <td class="td">A journey through the cosmos</td>
-            </tr>
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">Beyound the Stars</td>
+                <td class="border border-collapse p-2">Ethan Moore</td>
+                <td class="border border-collapse p-2">
+                  A journey through the cosmos
+                </td>
+              </tr>
 
-            <tr>
-              <td class="td">Robots of Tommorow</td>
-              <td class="td">Lily Scott</td>
-              <td class="td">The rise of intelligent machines</td>
-            </tr>
-          </tbody>
-        </table>
+              <tr class="border border-collapse p-2">
+                <td class="border border-collapse p-2">Robots of Tommorow</td>
+                <td class="border border-collapse p-2">Lily Scott</td>
+                <td class="border border-collapse p-2">
+                  The rise of intelligent machines
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
-    <footer class="footer center">
+    <footer class="bg-header-bgcolor border-t p-2 text-center">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>
