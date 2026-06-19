@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="font-sans text-fs scroll-smooth">
+<html lang="en" class="font-sans text-fs scroll-smooth bg-gray-600">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+  <body
+    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white shadow-2xl dark:shadow-white dark:shadow-xl shadow-black max-w-[800px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white">
     <header class="shrink sticky top-0 z-1">
-      <nav class="border-b bg-header-bgcolor">
+      <nav class="border-b bg-header-bgcolor dark:border-none dark:text-black">
         <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
           <li>
             <a
@@ -55,7 +56,8 @@
     <hr />
     <main class="grow p-4">
       <section id="search" class="search">
-        <h1 class="text-center p-2 text-font-color my-4 text-3xl font-bold">
+        <h1
+          class="text-center p-2 text-font-color my-4 text-3xl font-bold dark:text-white">
           Fiction Books
         </h1>
         <form
@@ -89,47 +91,85 @@
       <section id="book-catalog" class="catalog">
         <h2 class="border-t p-2">Book Catalog</h2>
         <div class="w-full overflow-x-auto">
-          <table class="border border-collapse p-2">
-            <caption class="offscreen">
+          <table class="border border-collapse p-2 dark:border-gray-400">
+            <caption class="absolute -left-1000">
               Fiction Books
             </caption>
-            <thead class="catalog__thead">
-              <tr>
-                <th class="catalog__th" scope="col">Tittle</th>
+            <thead class="border border-collapse p-2 dark:border-gray-400">
+              <tr class="border border-collapse p-2 dark:border-gray-400">
+                <th
+                  class="border dark:text-black bg-table-color border-collapse p-2 dark:border-gray-400"
+                  scope="col">
+                  Tittle
+                </th>
 
-                <th class="catalog__th" scope="col">Author</th>
+                <th
+                  class="border dark:text-black bg-table-color border-collapse p-2 dark:border-gray-400"
+                  scope="col">
+                  Author
+                </th>
 
-                <th class="catalog__th" scope="col">Description</th>
+                <th
+                  class="border dark:text-black bg-table-color border-collapse p-2 dark:border-gray-400"
+                  scope="col">
+                  Description
+                </th>
               </tr>
             </thead>
 
             <tbody>
-              <tr>
-                <td class="catalog__td">Into the Wild</td>
+              <tr class="border border-collapse p-2 dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Into the Wild
+                </td>
 
-                <td class="catalog__td">Sara Green</td>
-                <td class="catalog__td">An inspiring survival story</td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Sara Green
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  An inspiring survival story
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">The Last Kingdom</td>
+              <tr
+                class="border border-collapse p-2 bg-table-color dark:text-black dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  The Last Kingdom
+                </td>
 
-                <td class="catalog__td">David White</td>
-                <td class="catalog__td">A tale of honor and courage</td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  David White
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  A tale of honor and courage
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">Whispers in the WInd</td>
+              <tr class="border border-collapse p-2 dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Whispers in the WInd
+                </td>
 
-                <td class="catalog__td">Emily Clark</td>
-                <td class="catalog__td">A heartfelt story of love and loss</td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Emily Clark
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  A heartfelt story of love and loss
+                </td>
               </tr>
 
-              <tr>
-                <td class="catalog__td">The Hidden Path</td>
+              <tr
+                class="border border-collapse bg-table-color dark:text-black p-2 dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  The Hidden Path
+                </td>
 
-                <td class="catalog__td">James Walker</td>
-                <td class="catalog__td">An unforgettable adventure</td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  James Walker
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  An unforgettable adventure
+                </td>
               </tr>
             </tbody>
           </table>
@@ -137,7 +177,7 @@
       </section>
     </main>
 
-    <footer class="bg-header-bgcolor border-t p-2 text-center">
+    <footer class="bg-header-bgcolor border-t p-2 text-center dark:text-black">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>

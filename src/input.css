@@ -23,3 +23,7 @@
     rgb(116, 116, 121)
   );
 }
+
+.box-shadow {
+  box-shadow: 5px 0 10px;
+}

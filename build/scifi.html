@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="font-sans text-fs scroll-smooth">
+<html lang="en" class="font-sans text-fs scroll-smooth bg-gray-600">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +9,10 @@
     <link rel="icon" href="" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-
-  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+  <body
+    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white shadow-2xl dark:shadow-white dark:shadow-xl shadow-black max-w-[800px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white">
     <header class="shrink sticky top-0 z-1">
-      <nav class="border-b bg-header-bgcolor">
+      <nav class="border-b bg-header-bgcolor dark:text-black dark:border-none">
         <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
           <li>
             <a
@@ -56,7 +56,8 @@
 
     <main class="grow p-4">
       <section id="search-scifi" class="search">
-        <h1 class="text-center p-2 text-font-color my-4 text-3xl font-bold">
+        <h1
+          class="text-center p-2 text-font-color my-4 text-3xl font-bold dark:text-white">
           <abbr title="Science Fiction">Sci-Fi</abbr> Books
         </h1>
 
@@ -96,42 +97,70 @@
             </caption>
             <thead class="catalog__thead">
               <tr class="border border-collapse p-2">
-                <th class="border border-collapse p-2" scope="col">Title</th>
-                <th class="border border-collapse p-2" scope="col">Author</th>
-                <th class="border border-collapse p-2" scope="col">
+                <th
+                  class="bg-table-color dark:text-black dark:border-gray-400 border border-collapse p-2"
+                  scope="col">
+                  Title
+                </th>
+                <th
+                  class="bg-table-color dark:text-black dark:border-gray-400 border border-collapse p-2"
+                  scope="col">
+                  Author
+                </th>
+                <th
+                  class="bg-table-color dark:text-black dark:border-gray-400 border border-collapse p-2"
+                  scope="col">
                   Description
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">The Future World</td>
-                <td class="border border-collapse p-2">Alex Carter</td>
-                <td class="border border-collapse p-2">
+              <tr class="border border-collapse dark:border-gray-400 p-2">
+                <td class="border border-collapse dark:border-gray-400 p-2">
+                  The Future World
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Alex Carter
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
                   Visions of technology and time
                 </td>
               </tr>
 
-              <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">Galactic Odyssey</td>
-                <td class="border border-collapse p-2">Rachel Adams</td>
-                <td class="border border-collapse p-2">
+              <tr
+                class="border border-collapse bg-table-color dark:text-black p-2">
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Galactic Odyssey
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Rachel Adams
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
                   An epic space adventure
                 </td>
               </tr>
 
               <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">Beyound the Stars</td>
-                <td class="border border-collapse p-2">Ethan Moore</td>
-                <td class="border border-collapse p-2">
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Beyound the Stars
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Ethan Moore
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
                   A journey through the cosmos
                 </td>
               </tr>
 
-              <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">Robots of Tommorow</td>
-                <td class="border border-collapse p-2">Lily Scott</td>
-                <td class="border border-collapse p-2">
+              <tr
+                class="border border-collapse bg-table-color dark:text-black p-2">
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Robots of Tommorow
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
+                  Lily Scott
+                </td>
+                <td class="border dark:border-gray-400 border-collapse p-2">
                   The rise of intelligent machines
                 </td>
               </tr>
@@ -141,7 +170,7 @@
       </section>
     </main>
 
-    <footer class="bg-header-bgcolor border-t p-2 text-center">
+    <footer class="bg-header-bgcolor border-t p-2 text-center dark:text-black">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>

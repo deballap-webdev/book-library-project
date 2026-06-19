@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="font-sans scroll-smooth text-fs">
+<html lang="en" class="font-sans scroll-smooth text-fs bg-gray-600">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body class="w-full min-h-screen flex flex-col flex-nowrap">
+  <body
+    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white shadow-2xl dark:shadow-white dark:shadow-xl shadow-black max-w-[1500px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white">
     <header class="shrink sticky top-0 z-1">
-      <nav class="border-b bg-header-bgcolor">
+      <nav class="border-b dark:text-black bg-header-bgcolor">
         <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
           <li>
             <a
@@ -238,74 +239,88 @@
               Catalog
             </caption>
             <thead class="catalog__thead">
-              <tr class="border border-collapse p-2">
+              <tr class="border border-collapse p-2 dark:border-gray-400">
                 <th
-                  class="bg-table-color border border-collapse p-2"
+                  class="bg-table-color dark:text-black border border-collapse p-2 dark:border-gray-400"
                   scope="col">
                   Title
                 </th>
                 <th
-                  class="bg-table-color border border-collapse p-2"
+                  class="bg-table-color dark:text-black border border-collapse p-2 dark:border-gray-400"
                   scope="col">
                   Author
                 </th>
                 <th
-                  class="bg-table-color border border-collapse p-2"
+                  class="bg-table-color dark:text-black border border-collapse p-2 dark:border-gray-400"
                   scope="col">
                   Genre
                 </th>
                 <th
-                  class="bg-table-color border border-collapse p-2"
+                  class="bg-table-color dark:text-black border border-collapse p-2 dark:border-gray-400"
                   scope="col">
                   Description
                 </th>
               </tr>
             </thead>
             <tbody>
-              <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">
+              <tr class="border border-collapse p-2 dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <a href="">Into the Wild</a>
                 </td>
-                <td class="border border-collapse p-2">Sara Green</td>
-                <td class="border border-collapse p-2">Fiction</td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Sara Green
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Fiction
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   An inspiring survival story
                 </td>
               </tr>
 
-              <tr class="border border-collapse p-2 bg-table-color">
-                <td class="border border-collapse p-2">
+              <tr
+                class="border border-collapse p-2 dark:border-gray-400 bg-table-color dark:text-black">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <a href="">The Future World</a>
                 </td>
-                <td class="border border-collapse p-2">Alex Carter</td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Alex Carter
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <abbr title="Science Fiction">Sci-Fi</abbr>
                 </td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   Visions of technology and time
                 </td>
               </tr>
 
-              <tr class="border border-collapse p-2">
-                <td class="border border-collapse p-2">
+              <tr class="border border-collapse p-2 dark:border-gray-400">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <a href="">History Unveiled</a>
                 </td>
-                <td class="border border-collapse p-2">Michael Brown</td>
-                <td class="border border-collapse p-2">Non-Fiction</td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Michael Brown
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Non-Fiction
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   Uncovering ancients secrets
                 </td>
               </tr>
 
-              <tr class="border border-collapse p-2 bg-table-color">
-                <td class="border border-collapse p-2">
+              <tr
+                class="border border-collapse p-2 dark:border-gray-400 bg-table-color dark:text-black">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <a href="">Galactic Odyssey</a>
                 </td>
-                <td class="border border-collapse p-2">Rachael Adams</td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
+                  Rachael Adams
+                </td>
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   <abbr title="Science Fiction">Sci-Fi</abbr>
                 </td>
-                <td class="border border-collapse p-2">
+                <td class="border border-collapse p-2 dark:border-gray-400">
                   An epic space adventure
                 </td>
               </tr>
@@ -315,7 +330,7 @@
       </section>
     </main>
 
-    <footer class="bg-header-bgcolor border-t p-2 text-center">
+    <footer class="bg-header-bgcolor dark:text-black border-t p-2 text-center">
       <p>&copy; 2024 Online Book Library</p>
     </footer>
   </body>
