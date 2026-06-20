@@ -11,7 +11,7 @@
   </head>
 
   <body
-    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white max-w-[800px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white">
+    class="md:mx-auto min-h-screen flex flex-col flex-nowrap bg-white shadow-2xl dark:shadow-white dark:shadow-xl shadow-black max-w-[800px] md:border-x-2 border-x-black dark:text-white dark:bg-black dark:border-x-white">
     <header class="shrink sticky top-0 z-1">
       <nav class="border-b dark:border-none bg-header-bgcolor dark:text-black">
         <ul class="flex flex-row flex-wrap gap-4 justify-evenly p-2 list-none">
@@ -65,7 +65,7 @@
           <p class="mb-8 mx-8">
             <label class="block my-2 w-[75%]">First Name:</label>
             <input
-              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
+              class="block my-2 w-[75%] border-[3px] rounded-lg text-[0.8rem4] p-2 font-extralight"
               for="firstName"
               type="text"
               name="firstName"
@@ -79,7 +79,7 @@
           <p class="m-8">
             <label class="block my-2 w-[75%]" for="lastName">Last Name:</label>
             <input
-              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
+              class="block my-2 w-[75%] border-[3px] rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="text"
               name="lastName"
               id="lastName"
@@ -91,7 +91,7 @@
           <p class="m-8">
             <label class="block my-2 w-[75%]" for="email">Email:</label>
             <input
-              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
+              class="block my-2 w-[75%] border-[3px] rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="email"
               name="email"
               id="email"
@@ -103,7 +103,7 @@
           <p class="m-8">
             <label class="block my-2 w-[75%]" for="phone">Phone:</label>
             <input
-              class="block my-2 w-[75%] border-3 rounded-lg text-[0.8rem4] p-2 font-extralight"
+              class="block my-2 w-[75%] border-[3px] rounded-lg text-[0.8rem4] p-2 font-extralight"
               type="tel"
               name="phone"
               id="phone"
@@ -152,7 +152,7 @@
             Send Us A Message
           </legend>
           <textarea
-            class="text-[0.8rem] font-extralight border-3 rounded-lg p-2"
+            class="text-[0.8rem] font-extralight border-[3px] rounded-lg p-2"
             name="message"
             id="message"
             placeholder="Type Your Message Here"
@@ -161,12 +161,12 @@
         </fieldset>
 
         <button
-          class="p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
+          class="transition-transform duration-300 hover:scale-105 active:scale-95 p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
           type="submit">
           Send Message
         </button>
         <button
-          class="p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
+          class="transition-transform duration-300 hover:scale-105 active:scale-95 p-2 rounded-[10px] my-4 mr-2 ml-0 bg-button-color text-white"
           type="submit">
           Reset
         </button>
